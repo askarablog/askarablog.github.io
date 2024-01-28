@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <script src="https://hammerjs.github.io/dist/hammer.min.js"></script>
+ <link rel="stylesheet" href="styles.css">
+ <title>Askara</title>
+</head>
+<body>
+ <main>
+  <h4>Askara</h4>
+  <hr>
+  <div>
+   <h4>Askara</h4>
+   <p>"Tujuan didirikannya platform ini adalah memberikan ruang kepada mahasiswa untuk menyampaikan opini, informasi, dan pendapat secara anonim namun selektif."</p>
+   <em>28 Januari 2024</em>
+  </div>
+ </main>
+</body>
+<script>
+ var secs = document.querySelector('main').querySelectorAll('div');
+ secs.forEach(function(sec, i){
+  var hammer = new Hammer(sec);
+  var index = secs.length - i;
+  hammer.on('tap', function(){
+   window.open('https://askarablog.github.io/d/' + index + '.html', '_blank')
+  })
+ })
+</script>
+</html>
