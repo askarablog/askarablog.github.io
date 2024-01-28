@@ -1,5 +1,5 @@
 :root{
- font-size: 24px;
+ font-size: 3vw;
 }
 *{
  padding:0;
@@ -25,13 +25,17 @@ div{
  margin-bottom: 1rem;
  transform: translate(-0.2em, -0.3em);
  background-color: white;
- filter: drop-shadow(0.2rem 0.3rem 0rem rgb(139, 191, 255));
+ filter: drop-shadow(0.2rem 0.3rem 0rem rgb(193, 33, 33));
  transition: 0.1s;
  cursor: pointer;
 }
+a{
+ text-decoration: none;
+ cursor: default;
+}
 div:hover{
- filter: drop-shadow(0.1rem 0.2rem 0rem rgb(139, 191, 255));
- transform: translate(-0.1em, -0.2em);
+ filter: drop-shadow(0.1rem 0.15rem 0rem rgb(193, 33, 33));
+ transform: translate(-0.1em, -0.15em);
 }
 div h4{
  font-size: 1rem;
@@ -43,16 +47,43 @@ div p{
  border-left: 2px solid grey;
  color: #7f7f7f
 }
+h4{
+ display:flex;
+ align-items: center;
+ justify-content: space-between;
+}
+em{
+ font-style: normal;
+}
+button{
+ font-size: 0.6rem;
+ font-family:Helvetica, sans-serif;
+ padding:0.2rem 0.5rem 0.2rem 0.5rem;
+ border: 1px solid rgb(0, 0, 0);
+ background-color: rgb(255, 255, 255);
+ color: #000000;
+ filter: drop-shadow(0.1rem 0.15rem 0rem rgb(193, 33, 33));
+ transform: translate(-0.1em, -0.15em);
+ transition: 0.1s;
+}
+button:hover{
+ cursor: pointer;
+ filter: drop-shadow(0.05rem 0.075rem 0rem rgb(193, 33, 33));
+ transform: translate(-0.05rem, -0.075rem);
+}
 div em {
  font-style: normal;
  color: #7f7f7f;
  display:block;
  width: 100%;
  text-align: right;
- font-size: 0.36rem;
+ font-size: 0.6rem;
 }
 @media screen and (max-width: 600px) {
+ :root{
+  font-size: 7vw;
+ }
  main{
-  padding: 2rem;
+  padding: 1.5rem;
  }
 }
